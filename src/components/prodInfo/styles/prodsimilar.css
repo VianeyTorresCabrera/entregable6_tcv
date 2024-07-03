@@ -1,0 +1,19 @@
+.prodsimilar{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 10px;
+}
+
+.prodsimilar_title{
+    padding-left: 20px;
+}
+
+@media (min-width: 750px){
+   .prodsimilar >.homepage_container{    
+        /*flex-grow: 1;
+        flex-shrink: 1; 
+        flex-basis: 100%;*/
+   }
+}
+

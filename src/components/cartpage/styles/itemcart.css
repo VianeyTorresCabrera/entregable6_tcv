@@ -1,0 +1,29 @@
+.itemcart{
+    width: 250px;
+    display: grid;
+    border: 1px solid;
+    padding: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr, 2fr, 1fr);    
+    place-items: center;    
+    gap: 10px;  
+}
+
+.itemcart_title{
+    grid-column: span 3;
+}
+
+/*.itemcart_buttons{
+    display: flex;
+}*/
+
+/*.itemcart_buttons > span{
+    padding: 0 10px;
+}*/
+
+.itemcart_img img {
+    max-height: 200px;
+}
+.itemcart_total{
+    grid-column: span 3;
+}

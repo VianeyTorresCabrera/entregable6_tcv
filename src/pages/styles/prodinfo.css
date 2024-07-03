@@ -1,0 +1,40 @@
+.prodinfo{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;  
+    /*flex-wrap: wrap;        */
+    align-items: center;
+}
+
+.homepage_container{
+    width: 100%;
+}
+
+.prodsimilar{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 750px){
+    .prodinfo{
+       display: flex;
+       flex-direction: row;   
+       align-items: stretch;                          
+    }
+
+    .prodsimilar,
+    .proddetails,
+    .splide{
+        flex-grow: 1; 
+        flex-shrink: 1; 
+        flex-basis: 50%;  
+    }
+
+    .prodsimilar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+

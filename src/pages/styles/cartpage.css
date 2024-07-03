@@ -1,0 +1,40 @@
+.cartpage{
+    display: flex;    
+    flex-direction: column;
+    align-items:center;    
+}
+
+.cartpage_container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.cartpage_totals{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.cartpage_list{    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.itemcart{
+    width:100%;
+    border:none;
+}
+

@@ -1,0 +1,106 @@
+.prodcard{
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    
+}
+
+.prodcard_div{
+    width: 100%;
+    border:1px solid rgba(128, 128, 128, 0.281); ;
+}
+
+.prodcard_img{
+    cursor: pointer;
+    position: relative;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    overflow: hidden;
+}
+
+.prodcard_img img:last-child{
+    position: absolute;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.prodcard_img img:last-child:hover{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.prodcard_img img:first-child{
+    opacity: 1;
+    transition: opacity .5s;
+}
+
+.prodcard_img img:first-child:hover{
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.prodcard_img img{
+    width: 90%;
+    max-height: 250px;
+}
+
+.prodcard_buttons{
+    padding-bottom: 20px;
+    display: flex;
+    gap:20px;
+}
+
+
+.prodcard_buttons >button:last-child{
+    box-sizing: border-box;
+    line-height: 1;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.prodcard_buttons >button:last-child img{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    max-width: 25px;
+}
+
+.prodcard_item{
+    display: flex;
+    flex-direction: column;
+}
+
+.prodcard_list{
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.prodcard_item span:last-child{
+    color: gray;
+}
+
+.prodcard_item span:last-child{
+    padding-left: 20px;
+}
+
+.prodcard_buttons button{
+    padding: 5px 10px;
+    font-family: inherit;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;
+}
+
