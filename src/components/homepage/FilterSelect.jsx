@@ -18,7 +18,8 @@ const FilterSelect = ({setCategoryValue}) => {
     }
 
   return (
-    <select ref={itemSelect} onChange={handleChange}>
+    <div className='filterselect'>
+      <select ref={itemSelect} onChange={handleChange}>
         <option value="">All products</option>
         {
             categories?.map((category)=>(
@@ -27,7 +28,9 @@ const FilterSelect = ({setCategoryValue}) => {
                 </option>
             ))
         }
-    </select>
+      </select>
+    </div>
+    
   )
 }
 
