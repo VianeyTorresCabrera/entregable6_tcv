@@ -24,13 +24,10 @@
     gap: 10px;
 }
 
-
-
 .cartpage_list{    
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-
 }
 
 .itemcart{

@@ -23,7 +23,7 @@ const PurchasesInfo = ({purchase}) => {
                 <div className='purchasesinfo_q_box'>{purchase.quantity}</div>
             </div>
             
-            <span>$ {purchase.product?.price}</span>
+            <span>$ {purchase.product?.price*purchase.quantity}</span>
             </Link>
     </article>
   )

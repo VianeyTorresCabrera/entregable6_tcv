@@ -6,32 +6,28 @@ import {postProductsThunk, updateProductThunk} from '../../store/slices/cart.sli
 
 const ProdDetails = ({product}) => {
 
- /*const[quantity, setQuantity] = useState(1);*/
+ const[count, setCount] = useState(1);
 
  const dispatch = useDispatch();
 
 
- const navigate = useNavigate();
-
  const handleLess = () =>{
-  if (product.quantity > 1) {
-      dispatch( updateProductThunk(product.id, {
-          "quantity": product.quantity - 1,
-      }));  
-  }        
+  if(count >1){
+  setCount(count-1)
+  }
+   
 }
 
 const handlePlus = () => {
- dispatch( updateProductThunk(product.id, {
-  "quantity": product.quantity + 1,
-}));
+  setCount(count+1); 
 }
 
- const handleBuy = () =>{
-  dispatch(postProductsThunk());
-  dispatch(setCart([]));//vaciamos el carrito de cartslice
+const handleAddCart = () =>{
+ dispatch(postProductsThunk({
+  "quantity": count,
+  "productId": product.id,
+ }));
 }
-
 
 
   console.log(product);
@@ -50,13 +46,13 @@ const handlePlus = () => {
           <div className='proddetails_quantity_title'></div>
           <div className='proddetails_quantity_box'>
               <button onClick={handleLess} > - </button>
-              <div className='quantity'>{product?.quantity}</div>
+              <div className='quantity'>{count}</div>
               <button onClick={handlePlus}> + </button>      
           </div>
         </div>
       </div>
       <div className='proddetails_btn_cart'>
-        <button onClick={handleBuy} className='proddetails_addcart'>Add to cart
+        <button onClick={handleAddCart} className='proddetails_addcart'>Add to cart
           <img src="../..//assets/cart2.svg" alt="details_car_img" />
         </button>
       </div>

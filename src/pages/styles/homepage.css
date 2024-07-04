@@ -55,6 +55,9 @@
     display: none;    
 }
 
+.menu.active{
+    display: none;
+}
 .homepage_container{
  padding: 20px 20px 20px 250px;
  display: flex;
